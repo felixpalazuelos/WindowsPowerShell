@@ -58,7 +58,7 @@ function Get-ChildItem-Force { ls -Force }
 set-alias la Get-ChildItem-Force -option allscope
 
 # Load posh-git example profile
-. 'C:\Users\felixpalazuelos\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
+. 'C:\Users\felixpalazuelos\Documents\WindowsPowerShell\felixprofile.ps1'
 
 Import-TabExpansiontheme SimpleWhite
 set-location $HOME
