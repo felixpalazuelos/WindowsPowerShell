@@ -21,8 +21,11 @@ rename-item alias:\gl gll -force
 function git-status { git status }
 Set-Alias -Name gs -Value git-status
 
-function git-push { git status }
+function git-push { git push }
 Set-Alias -Name gp -Value git-push
+
+function git-push-origin-master { git push origin master}
+Set-Alias -Name gpom -Value git-push-origin-master
 
 function git-pull { git pull }
 Set-Alias -Name gl -Value git-pull
