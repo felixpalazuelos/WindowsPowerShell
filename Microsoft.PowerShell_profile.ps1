@@ -55,4 +55,6 @@ set-alias la Get-ChildItem-Force -option allscope
 . 'C:\Users\felixpalazuelos\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
 
 Import-TabExpansiontheme SimpleWhite
+set-location C:\Users\felixpalazuelos\Code
+clear
 
