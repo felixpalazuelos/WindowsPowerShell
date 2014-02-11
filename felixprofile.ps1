@@ -30,11 +30,12 @@ function global:prompt {
     Write-Host(shorten-path (pwd).Path) -nonewline
     Write-VcsStatus
 
+    $Host.UI.RawUI.ForegroundColor = $GitPromptSettings.DefaultForegroundColor
      
 
     $global:LASTEXITCODE = $realLASTEXITCODE
-    return "> "
-    $Host.UI.RawUI.ForegroundColor = $GitPromptSettings.DefaultForegroundColor
+    return " "
+
 }
 
 Enable-GitColors
