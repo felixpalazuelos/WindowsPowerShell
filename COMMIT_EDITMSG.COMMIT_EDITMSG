@@ -1,0 +1,21 @@
+updated
+
+# --------------
+# Please enter the commit message for your changes. Everything below
+# this paragraph is ignored, and an empty message aborts the commit.
+# Just close the window to accept your message.
+diff --git a/Microsoft.PowerShell_profile.ps1 b/Microsoft.PowerShell_profile.ps1
+index 04e29be..1e0fe34 100644
+--- a/Microsoft.PowerShell_profile.ps1
++++ b/Microsoft.PowerShell_profile.ps1
+@@ -46,10 +46,6 @@ Set-Alias -Name gco -Value git-checkout
+ function git-log { git log }
+ Set-Alias -Name glog -Value git-log
+ 
+-# Load posh-git example profile
+-. 'C:\Users\felixpalazuelos\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
+-
+-set-location C:\Users\felixpalazuelos
+ . "C:\Users\felixpalazuelos\Documents\WindowsPowerShell\Get-ChildItemColor.ps1" # read the colourized ls
+ set-alias ls Get-ChildItemColor -force -option allscope
+ function Get-ChildItem-Force { ls -Force }

@@ -46,10 +46,6 @@ Set-Alias -Name gco -Value git-checkout
 function git-log { git log }
 Set-Alias -Name glog -Value git-log
 
-# Load posh-git example profile
-. 'C:\Users\felixpalazuelos\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
-
-set-location C:\Users\felixpalazuelos
 . "C:\Users\felixpalazuelos\Documents\WindowsPowerShell\Get-ChildItemColor.ps1" # read the colourized ls
 set-alias ls Get-ChildItemColor -force -option allscope
 function Get-ChildItem-Force { ls -Force }
