@@ -61,7 +61,7 @@ set-alias la Get-ChildItem-Force -option allscope
 . 'C:\Users\felixpalazuelos\Documents\WindowsPowerShell\felixprofile.ps1'
 
 Import-TabExpansiontheme SimpleWhite
-set-location $HOME
+set-location $HOME\Code
 [System.Environment]::CurrentDirectory = $HOME
 clear
 
