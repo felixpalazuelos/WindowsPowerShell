@@ -31,8 +31,11 @@ Set-Alias -Name gpom -Value git-push-origin-master
 function git-pull { git pull }
 Set-Alias -Name gl -Value git-pull
 
-function git-add-update { git add -u}
-Set-Alias -Name gau -Value git-add-update
+function git-add-all { git add .}
+Set-Alias -Name gaa -Value git-add-all
+
+function git-add { git add}
+Set-Alias -Name ga -Value git-add
 
 function git-commit-m { git commit -m $args }
 Set-Alias -Name gc -Value git-commit-m
