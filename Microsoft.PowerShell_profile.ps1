@@ -13,6 +13,9 @@ $env:TERM = "msys"
 Set-Alias subl "C:\Program Files\Sublime Text 3\sublime_text.exe"
 Set-Alias vim "C:\Program Files (x86)\Vim\vim74\vim.exe"
 
+set-variable -name HOME -value (resolve-path C:/users/felixpalazuelos) -force
+(get-psprovider FileSystem).Home = $HOME
+
 #remove default alias
 rename-item alias:\gc gcc -force
 rename-item alias:\gp gpp -force
@@ -58,6 +61,7 @@ set-alias la Get-ChildItem-Force -option allscope
 . 'C:\Users\felixpalazuelos\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
 
 Import-TabExpansiontheme SimpleWhite
-set-location C:\Users\felixpalazuelos\Code
+set-location $HOME
+[System.Environment]::CurrentDirectory = $HOME
 clear
 
