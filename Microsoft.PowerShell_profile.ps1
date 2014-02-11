@@ -1,5 +1,6 @@
 ﻿Import-Module PsGet
 Import-Module PSUrl
+Import-Module PowerTab
 
 if(Test-Path ~\.last) {
     (Get-Content ~\.last) | set-location
