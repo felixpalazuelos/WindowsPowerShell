@@ -20,18 +20,18 @@ function shorten-path([string] $path) {
 # Set up a simple prompt, adding the git prompt parts inside git repos
 function global:prompt {
     $realLASTEXITCODE = $LASTEXITCODE
-    
+
     # Reset color, which can be messed up by Enable-GitColors
-    $Host.UI.RawUI.ForegroundColor = $GitPromptSettings.UntrackedForegroundColor
+    $Host.UI.RawUI.ForegroundColor = [ConsoleColor]::Cyan
     Write-Host('felixpalazuelos ') -nonewline
-    $Host.UI.RawUI.ForegroundColor = [ConsoleColor]::Blue
+    $Host.UI.RawUI.ForegroundColor = [ConsoleColor]::Red
 
     #Write-Host($pwd.ProviderPath) -nonewline
     Write-Host(shorten-path (pwd).Path) -nonewline
     Write-VcsStatus
 
     $Host.UI.RawUI.ForegroundColor = $GitPromptSettings.DefaultForegroundColor
-     
+
 
     $global:LASTEXITCODE = $realLASTEXITCODE
     return " "
